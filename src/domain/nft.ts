@@ -1,7 +1,8 @@
 enum NFTType{
     Ethereum,
     IMX,
-    Solana
+    Solana,
+    Loopring,
 }
 type NFT ={
     title:string,

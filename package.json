@@ -10,16 +10,15 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@rollup/plugin-replace": "^5.0.2",
-    "@sveltejs/vite-plugin-svelte": "^2.0.0",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "@tsconfig/svelte": "^3.0.0",
     "dotenv": "^16.0.3",
-    "node-stdlib-browser": "^1.2.0",
     "svelte": "^3.54.0",
     "svelte-check": "^2.10.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
-    "vite": "^4.0.0"
+    "vite": "^4.0.4"
   },
   "description": "This template should help get you started developing with Svelte and TypeScript in Vite.",
   "main": "svelte.config.js",
@@ -36,6 +35,7 @@
     "@svelte-on-solana/wallet-adapter-core": "^1.0.11-alpha.0",
     "alchemy-sdk": "^2.3.0",
     "axios": "^1.2.2",
+    "buffer": "^6.0.3",
     "ethers": "^5.7.2",
     "save": "^2.9.0",
     "undefined": "^0.1.0"
