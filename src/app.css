@@ -1,3 +1,4 @@
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15,7 +16,18 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
+.main-container{
+ 
+  min-height: 800px;
+    margin: 20px;
+    padding: 0px;
+    background-color: black;
+    background-image: url('./img/bg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -33,4 +45,8 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+#app {
+  display: flex;
+  justify-content: center;
 }

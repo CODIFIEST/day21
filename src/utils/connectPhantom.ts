@@ -11,12 +11,12 @@ async function connectPhantom (){
     const addy = (window as any).phantom.solana.publicKey.toString();
     console.log((window as any).phantom.solana)
     console.log("address resolved here")
-    
+    console.log(addy)
     account.set(addy)
     // console.log("thsi is the " , account)
     const SOLNFTs = await getSolNFTs(addy)
-    // console.log("Sol NFTs")
-    // console.log(SOLNFTs)
+    console.log("Sol NFTs")
+    console.log(SOLNFTs)
    nfts.set(SOLNFTs);
     // console.log(walletStore)
 }

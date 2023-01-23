@@ -31,19 +31,29 @@
     }
     .nft-row img {
         border-radius: 8px;
-        /* max-width: 200px; */
+        max-width: 200px;
     }
     .nft-column {
-        width: 31%;
+        width: 24%;
     }
+ 
     .nft-display {
-        margin: 5px;
-    }
-    .NFT-Container {
         display: flex;
         justify-content: center;
         margin: 11px 0px 0px 0px;
     }
+    .NFT-Container {
+
+        max-width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .6);
+    }
+    .max-width {
+    max-width: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+}
     @media screen and (max-width: 600px) {
         .nft-row {
             display: flex;
