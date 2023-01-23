@@ -13,7 +13,7 @@
    
      <img
         class="wallet-image"
-        src= './src/img/metamaskFox.png'
+        src= 'https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg'
         alt="metamask Fox"
         on:keypress={async () => {
             await connectMetamaskWallet();
