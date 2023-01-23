@@ -13,7 +13,7 @@
    
      <img
         class="wallet-image"
-        src= './src/img/metamaskFox.png'
+        src= '/src/img/metamaskFox.png'
         alt="metamask Fox"
         on:keypress={async () => {
             await connectMetamaskWallet();
@@ -25,7 +25,7 @@
      <img 
         class = "wallet-image"
         alt = "phantom wallet"
-        src = './src/img/phantom-icon-purple.png'
+        src = '/src/img/phantom-icon-purple.png'
         on:click={
             async ()=>{
                 await connectPhantom();
