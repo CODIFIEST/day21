@@ -32,7 +32,7 @@ import { NFTType, type NFT } from "../domain/nft";
     // console.log(address)
 //  console.log(import.meta.env.VITE_QUICKNODE_APK)
 
-    const quiknodeNFTs = await axios.post(process.env.VITE_QUICKNODE_APK, data, config)
+    const quiknodeNFTs = await axios.post(import.meta.env.VITE_QUICKNODE_APK, data, config)
     // console.log(import.meta.env.VITE_QUICKNODE_APK)
     // console.log("solana wallet data")
     // console.log (quiknodeNFTs)

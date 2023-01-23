@@ -4,7 +4,7 @@ import { Network, Alchemy } from "alchemy-sdk";
 
 async function getEthNFTs(address: string): Promise<NFT[]> {
     const settings = {
-        apiKey: "iV9Rjt5iMP4Ci8TDngI2rWaohTB2WvZW",//### TODO- put this in env file soit's not uploaded to git
+        apiKey: "iV9Rjt5iMP4Ci8TDngI2rWaohTB2WvZW",// process.env.ALCHEMY_APK### TODO- put this in env file soit's not uploaded to git 
         network: Network.ETH_MAINNET,
     }
 
