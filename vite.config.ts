@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
-import GlobalPolyFill from "@esbuild-plugins/node-modules-polyfill"
+import GlobalPolyFill  from "@esbuild-plugins/node-modules-polyfill"
 // import GlobalPolyFill from "@esbuild-plugins/node-globals-polyfill";
 import { resolve } from "path";
 
@@ -12,16 +12,19 @@ import { resolve } from "path";
 
 export default defineConfig({
   plugins: [svelte()],
+  build: {
+    chunkSizeWarningLimit: 200*1024,
+  },
   optimizeDeps: {
       esbuildOptions: {
           define: {
               global: "globalThis",
           },
           plugins: [
-              // GlobalPolyFill({
-              //     // process: true,
-              //     // buffer: true,
-              // }),
+            //   GlobalPolyFill({
+            //       // process: true,
+            //       // buffer: true,
+            //   }),
           ],
       },
   },

@@ -1,5 +1,6 @@
 <script lang="ts">
-    import connectMetamaskWallet from "../utils/connectMetamaskWallet";
+    import connectGME from "../utils/connectGME";
+import connectMetamaskWallet from "../utils/connectMetamaskWallet";
     import connectPhantom from "../utils/connectPhantom";
 
 </script>
@@ -25,7 +26,7 @@
      <img 
         class = "wallet-image"
         alt = "phantom wallet"
-        src = './src/img/phantom-icon-purple.png'
+        src = './src/assets/phantom-icon-purple.png'
         on:click={
             async ()=>{
                 await connectPhantom();
@@ -36,6 +37,22 @@
                 await connectPhantom();
             }
         }
+    >
+    <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo_GameStop.svg" 
+    alt="gamestop wallet"
+    class="wallet-image"
+    on:click={
+        async ()=>{
+            await connectGME();
+        }
+    }
+    on:keypress={
+       async () => {
+        await connectGME();
+        
+       }
+    }
     >
 </div>
 </div>
@@ -61,14 +78,14 @@
       
     }
 
-    .centered {
+    /* .centered {
         text-align: center;
         font-size: large;
         opacity: 1;
     }
-    
-    .eth-wallets {
+     */
+    /* .eth-wallets {
     }
     .sol-wallets {
-    }
+    } */
 </style>

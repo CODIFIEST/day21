@@ -29,10 +29,10 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .nft-row img {
+    /* .nft-row img {
         border-radius: 8px;
         max-width: 200px;
-    }
+    } */
     .nft-column {
         width: 24%;
     }
@@ -49,11 +49,11 @@
     overflow: hidden;
     background-color: rgba(0, 0, 0, .6);
     }
-    .max-width {
+    /* .max-width {
     max-width: 1000px;
     margin: 0px auto;
     overflow: hidden;
-}
+} */
     @media screen and (max-width: 600px) {
         .nft-row {
             display: flex;

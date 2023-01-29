@@ -1,10 +1,11 @@
 import {NFTType, type NFT} from "../domain/nft";
 import { Network, Alchemy } from "alchemy-sdk";
 // import transformURLs from "./transformURLs";
-
+// require('dotenv').config();
+// const ALCHEMY_APK = import.meta.env.VITE_ALCHEMY_APK;
 async function getEthNFTs(address: string): Promise<NFT[]> {
     const settings = {
-        apiKey: "iV9Rjt5iMP4Ci8TDngI2rWaohTB2WvZW",// process.env.ALCHEMY_APK### TODO- put this in env file soit's not uploaded to git 
+        apiKey: import.meta.env.VITE_ALCHEMY_APK,// process.env.ALCHEMY_APK### TODO- put this in env file soit's not uploaded to git 
         network: Network.ETH_MAINNET,
     }
 
